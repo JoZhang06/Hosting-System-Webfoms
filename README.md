@@ -3,7 +3,7 @@ This was a project focused on "Despegar" hosting system, using C#, asp.net frame
 Here is the visual studio project's solution and the database in Microsoft SQL management studio.
 It is worth noting that the project has the name in English, but its content is in Spanish.
 
-Este fue un proyecto enfocado en el sistema de hospedaje "Despegar", utilizando C#, el framework de asp.net, webforms.
+Este fue un proyecto programado enfocado en el sistema de hospedaje "Despegar", utilizando C#, el framework de asp.net, webforms.
 Aquí está la solución del proyecto en visual studio y la base de datos en Microsoft SQL Management Studio.
 Aclarar que el proyecto tiene el nombre en ingles, pero su contenido esta en español.
 
