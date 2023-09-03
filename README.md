@@ -13,7 +13,7 @@ Aclarar que el proyecto tiene el nombre en ingles, pero su contenido esta en esp
 3 - Your Name Server
 
 ## Image Login:
-![DespegarLogin](https://github.com/JoZhang06/Hosting-System-with-webforms/assets/123129983/39bd4606-2bb0-4b1c-9a13-7812724bcc61)
+![DespegarLogin](https://github.com/JoZhang06/Hosting-System-Webfoms/assets/123129983/32cdc992-7e58-4e8e-becc-5f24e51572f7) 
 
 ## Gestionar Reservaciones:
-![HostingSystem01](https://github.com/JoZhang06/Hosting-System-with-webforms/assets/123129983/10914d7a-15aa-4e13-ac61-1d5b4c089b6b)
+![HostingSystem01](https://github.com/JoZhang06/Hosting-System-Webfoms/assets/123129983/10914d7a-15aa-4e13-ac61-1d5b4c089b6b)
