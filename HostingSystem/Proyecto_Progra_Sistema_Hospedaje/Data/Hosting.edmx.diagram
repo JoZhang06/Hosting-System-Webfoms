@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e89e6ea8a0314f0396f58d17fd550e75" Name="Diagram1">
+        <EntityTypeShape EntityType="Hosting_SystemModel.Bitacora" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Hosting_SystemModel.Habitacion" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Hosting_SystemModel.Hotel" Width="1.5" PointX="1.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Hosting_SystemModel.Persona" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Hosting_SystemModel.Reservacion" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="Hosting_SystemModel.FK_Bitacora_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="Hosting_SystemModel.FK_Bitacora_Reservacion" ManuallyRouted="false" />
+        <AssociationConnector Association="Hosting_SystemModel.FK_Habitacion_Hotel" ManuallyRouted="false" />
+        <AssociationConnector Association="Hosting_SystemModel.FK_Reservacion_Habitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="Hosting_SystemModel.FK_Reservacion_Persona" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

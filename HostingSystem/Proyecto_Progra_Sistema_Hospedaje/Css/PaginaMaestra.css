@@ -1,0 +1,142 @@
+﻿body {
+    background: #e7e8f5;
+}
+
+.tabla {
+    background-color: #a8a7bb;
+    table-layout: fixed;
+    margin-left: 390px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px groove black;
+}
+
+.rows {
+    background-color: #9eabe8;
+    table-layout: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listacciones {
+    background-color: #8e8e94;
+    font-size: large;
+}
+
+.listabotonesdetalle {
+    margin-left: 420px;
+}
+
+.titulos {
+    font-family: 'Eras ITC';
+    padding: 40px;
+    font-style: initial;
+    caption-side: bottom;
+    color: #26227e;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.minititulo {
+    font-family:  'Microsoft JhengHei UI';
+    padding: 0px;
+    font-style: initial;
+    caption-side: bottom;
+    color: #26227e;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.lblnombre {
+    color: crimson;
+    padding: 27px;
+    font-family: 'Cambria Math';
+    font-size: large;
+}
+
+.cliente {
+    padding: 0PX;
+    font-size: 20px;
+    font-family: 'Cambria Math';
+    color: #26227e;
+}
+
+.btn-nuevareservacion {
+    color: aliceblue;
+    font-family: 'Eras ITC';
+    font-size: 17px;
+    background-color: #74ac6d;
+}
+
+.labels {
+    color: #26227e;
+}
+
+h2 {
+    color: #26227e;
+}
+
+nav {
+    background-color: crimson;
+    font-size: larger;
+}
+
+.navbar {
+    background-color: #0e1326;
+    font-size: large;
+    color: #393856;
+}
+
+.textonav {
+    text-transform: fullsize-kana;
+    color: black;
+    height: 55px;
+    font-family: 'Global Serif';
+    font-size: large;
+}
+
+.modal {
+    z-index: -1;
+}
+
+.modalcancel {
+    position: center;
+    margin-top: inherit;
+}
+.panel {
+    box-shadow: 0px 3px 400px #bdb6fa;
+    box-sizing: border-box;
+    background-color: #bdb6fa;
+}
+.cuadro {
+    width: 300px;
+    margin: 30px 410px;
+    padding: 23px;
+    background-color: #9eabe8;
+    border-block: solid;
+    border-block-end: solid;
+    border-block-start: solid;
+    border-block-width: thick;
+    border-left-width: thick;
+    border-right-width: thick;
+    box-shadow: 0px 3px 30px #26227e;
+    box-sizing:  content-box;
+}
+.cuadro2 {
+    width: 390px;
+    margin: 30px 360px;
+    padding: 23px;
+    background-color: #9eabe8;
+    border-block: solid;
+    border-block-end: solid;
+    border-block-start: solid;
+    border-block-width: thick;
+    border-left-width: thick;
+    border-right-width: thick;
+    box-shadow: 0px 3px 30px #26227e;
+    box-sizing: content-box;
+}
+
+footer {
+    color: #26227e;
+    font-family:  'Comic Sans MS';
+    font-size: large;
+}

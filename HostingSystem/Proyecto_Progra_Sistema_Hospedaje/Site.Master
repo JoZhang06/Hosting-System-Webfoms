@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Proyecto_Progra_Sistema_Hospedaje.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Sistema De Hospedaje</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Css/PaginaMaestra.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/"><a href="#">
+                        <img height="40" width="40" src="https://play-lh.googleusercontent.com/2T3JtqSm0jTxqhaJ9fhbxGplaoJ7pC_wh8A7NCJuAd1vkBeiyZ2zuzII6S_fF3WXBKx_" /></a></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a id="liMisreserv" class="textonav" runat="server" href="~/Pages/MisReservaciones.aspx" visible="false">Mis reservaciones</a></li>
+                        <li><a id="liGestionreserv" class="textonav" runat="server" href="~/Pages/GestionarReservaciones.aspx" visible="false">Gestionar reservaciones</a></li>
+                        <li><a id="liGestionha" class="textonav" runat="server" href="~/Pages/ListaHabitaciones.aspx" visible="false">Lista habitaciones</a></li>
+                        <li>
+                            <asp:LinkButton data-toggle="modal" href="#myModal" ID="lnkcerrarsesion" class="textonav" OnClick="lnkcerrarsesion_Click" CausesValidation="false" runat="server" Visible="false">Cerrar Sesión</asp:LinkButton>
+
+                        </li>
+
+                    </ul>
+
+                    <div id="myModal" data-backdrop="false" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cerrar Sesión</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <asp:Label ID="lbmensaje" runat="server" Text="Está seguro(a) de Cerrar Sesión?"></asp:Label>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <asp:Button ID="btncontinuar" OnClick="btncontinuar_Click" CausesValidation="false" class="btn btn-primary" runat="server" Text="Continuar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <script type="text/javascript">
+                            function openModal() {
+                                $('#myModal').modal("show");
+                            }
+                        </script>
+                                   <div id="mycancelar" data-backdrop="false" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cancelar Reservación</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <asp:Label ID="Label1" runat="server" Text="Esta seguro(a) de Cancelar la Reservación?"></asp:Label>
+                                <br /><br />
+                                    <asp:Button ID="btnSi" OnClick="btnSi_Click" CssClass="btn btn-danger" runat="server" Text="Sí, lo estoy" />
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No, Regresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <script type="text/javascript">
+                            function openModalC() {
+                                $('#mycancelar').modal("show");
+                            }
+                        </script>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="lblnombre">
+            <asp:Label ID="lblusuario" runat="server" Text=""></asp:Label>
+        </div>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Sistema De Hospedaje(Proyecto De Progra V)</p>
+            </footer>
+        </div>
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
