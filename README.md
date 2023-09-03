@@ -16,4 +16,4 @@ Aclarar que el proyecto tiene el nombre en ingles, pero su contenido esta en esp
 ![DespegarLogin](https://github.com/JoZhang06/Hosting-System-Webfoms/assets/123129983/32cdc992-7e58-4e8e-becc-5f24e51572f7) 
 
 ## Gestionar Reservaciones:
-![HostingSystem01](https://github.com/JoZhang06/Hosting-System-Webfoms/assets/123129983/10914d7a-15aa-4e13-ac61-1d5b4c089b6b)
+![HostingSystem01](https://github.com/JoZhang06/Hosting-System-Webfoms/assets/123129983/59f5b15e-a0ce-4731-8c10-9a10d2783f87) 
